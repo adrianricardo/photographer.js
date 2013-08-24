@@ -147,6 +147,11 @@
     // return a copy of the photos array
     return this._photos.slice(0);
   };
+  
+  proto.removePhoto = function(index){
+    //remove element at index
+    this._photos.splice(index, 1);
+  }
 
   // expose globally
   window.Photographer = Photographer;
