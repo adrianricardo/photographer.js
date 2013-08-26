@@ -152,6 +152,12 @@
     //remove element at index
     this._photos.splice(index, 1);
   }
+  
+  proto.clearAll = function(index){
+    //remove element at index
+    this._photos.length = 0;
+  }
+
 
   // expose globally
   window.Photographer = Photographer;
